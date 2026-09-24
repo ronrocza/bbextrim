@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="BBextrim — productos innovadores para hacer tu vida mejor, con un solo clic.">
+  <title>BBextrim | Innovative products, one click away</title>
+
+  <!-- Bootstrap 5.3 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top bar -->
+  <div class="topbar">
+    <div class="container d-flex justify-content-between align-items-center">
+      <span><i class="bi bi-lightning-charge-fill me-1"></i> Innovación que llega hasta tu puerta</span>
+      <span class="d-none d-md-inline">Compra segura · Envíos · Atención personalizada</span>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+    <div class="container py-2">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#inicio">
+        <img src="logo1.png" alt="BBextrim" class="brand-logo">
+        <span class="brand-name">BBextrim</span>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+              aria-controls="mainNav" aria-expanded="false" aria-label="Abrir navegación">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" href="#inicio">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#productos">Productos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#categorias">Categorías</a></li>
+          <li class="nav-item"><a class="nav-link" href="#nosotros">Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+        </ul>
+
+        <div class="d-flex align-items-center gap-2">
+          <button class="icon-btn" id="searchToggle" aria-label="Buscar">
+            <i class="bi bi-search"></i>
+          </button>
+          <button class="cart-btn position-relative" data-bs-toggle="offcanvas" data-bs-target="#cartCanvas"
+                  aria-controls="cartCanvas">
+            <i class="bi bi-bag"></i>
+            <span id="cartCount" class="cart-count">0</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Search panel -->
+  <div id="searchPanel" class="search-panel">
+    <div class="container py-3">
+      <div class="input-group input-group-lg">
+        <span class="input-group-text bg-white border-end-0"><i class="bi bi-search"></i></span>
+        <input id="searchInput" type="search" class="form-control border-start-0"
+               placeholder="¿Qué producto estás buscando?">
+        <button id="searchClose" class="btn btn-dark"><i class="bi bi-x-lg"></i></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hero -->
+  <main id="inicio">
+    <section class="hero-section">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
+            <span class="eyebrow">BBEXTRIM · ECOMMERCE</span>
+            <h1>Innovative products that <span>makes your life better</span>, just with one click.</h1>
+            <p class="hero-copy">
+              Descubre productos prácticos, modernos e innovadores seleccionados para simplificar
+              tu día a día. Compra fácil, rápido y seguro.
+            </p>
+            <div class="d-flex flex-wrap gap-3">
+              <a href="#productos" class="btn btn-primary-custom btn-lg">
+                Comprar ahora <i class="bi bi-arrow-right ms-2"></i>
+              </a>
+              <a href="#categorias" class="btn btn-outline-custom btn-lg">Explorar categorías</a>
+            </div>
+            <div class="hero-trust mt-4">
+              <div><i class="bi bi-shield-check"></i><span>Compra segura</span></div>
+              <div><i class="bi bi-truck"></i><span>Envíos</span></div>
+              <div><i class="bi bi-headset"></i><span>Soporte</span></div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="hero-art">
+              <div class="floating-badge badge-one"><i class="bi bi-stars"></i> Nuevos productos</div>
+              <div class="floating-badge badge-two"><i class="bi bi-heart-fill"></i> Selección BBextrim</div>
+              <div class="hero-circle">
+                <img src="logo1.png" alt="Logo BBextrim" class="hero-logo">
+              </div>
+              <div class="hero-card card-left">
+                <i class="bi bi-cart-check-fill"></i>
+                <div><strong>1 clic</strong><small>Compra simple</small></div>
+              </div>
+              <div class="hero-card card-right">
+                <i class="bi bi-box-seam-fill"></i>
+                <div><strong>Innovación</strong><small>Productos útiles</small></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Benefits -->
+    <section class="benefits-section">
+      <div class="container">
+        <div class="row g-3">
+          <div class="col-md-3"><div class="benefit"><i class="bi bi-stars"></i><div><strong>Productos innovadores</strong><small>Ideas que facilitan tu vida</small></div></div></div>
+          <div class="col-md-3"><div class="benefit"><i class="bi bi-shield-lock"></i><div><strong>Compra segura</strong><small>Proceso protegido</small></div></div></div>
+          <div class="col-md-3"><div class="benefit"><i class="bi bi-truck"></i><div><strong>Envíos confiables</strong><small>Seguimiento de tu pedido</small></div></div></div>
+          <div class="col-md-3"><div class="benefit"><i class="bi bi-chat-dots"></i><div><strong>Atención cercana</strong><small>Estamos para ayudarte</small></div></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Categories -->
+    <section id="categorias" class="section-padding bg-light">
+      <div class="container">
+        <div class="section-heading text-center">
+          <span class="eyebrow">DESCUBRE</span>
+          <h2>Compra por categoría</h2>
+          <p>Encuentra rápidamente aquello que puede hacer tu vida más cómoda.</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-6 col-lg-3">
+            <button class="category-card category-tech" data-category="Tecnología">
+              <i class="bi bi-cpu-fill"></i><strong>Tecnología</strong><span>Gadgets & accesorios</span>
+            </button>
+          </div>
+          <div class="col-6 col-lg-3">
+            <button class="category-card category-home" data-category="Hogar">
+              <i class="bi bi-house-heart-fill"></i><strong>Hogar</strong><span>Soluciones prácticas</span>
+            </button>
+          </div>
+          <div class="col-6 col-lg-3">
+            <button class="category-card category-wellness" data-category="Bienestar">
+              <i class="bi bi-heart-pulse-fill"></i><strong>Bienestar</strong><span>Cuida de ti</span>
+            </button>
+          </div>
+          <div class="col-6 col-lg-3">
+            <button class="category-card category-travel" data-category="Accesorios">
+              <i class="bi bi-backpack2-fill"></i><strong>Accesorios</strong><span>Para cada ocasión</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products -->
+    <section id="productos" class="section-padding">
+      <div class="container">
+        <div class="section-heading d-flex flex-wrap justify-content-between align-items-end gap-3">
+          <div>
+            <span class="eyebrow">NUESTRA SELECCIÓN</span>
+            <h2>Productos destacados</h2>
+            <p>Una muestra del catálogo inicial de BBextrim.</p>
+          </div>
+          <div class="d-flex gap-2 align-items-center">
+            <select id="categoryFilter" class="form-select filter-select" aria-label="Filtrar por categoría">
+              <option value="Todos">Todas las categorías</option>
+              <option value="Tecnología">Tecnología</option>
+              <option value="Hogar">Hogar</option>
+              <option value="Bienestar">Bienestar</option>
+              <option value="Accesorios">Accesorios</option>
+            </select>
+          </div>
+        </div>
+        <div id="productGrid" class="row g-4"></div>
+        <div id="emptyState" class="empty-state d-none">
+          <i class="bi bi-search"></i>
+          <h4>No encontramos productos</h4>
+          <p>Prueba con otra búsqueda o categoría.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Promotional banner -->
+    <section class="promo-section">
+      <div class="container">
+        <div class="promo-box">
+          <div>
+            <span class="eyebrow light">BBEXTRIM</span>
+            <h2>Encuentra algo que no sabías que necesitabas.</h2>
+            <p>Productos seleccionados para convertir pequeñas molestias en soluciones inteligentes.</p>
+          </div>
+          <a href="#productos" class="btn btn-light btn-lg">Ver catálogo <i class="bi bi-arrow-right ms-2"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="nosotros" class="section-padding about-section">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-5">
+            <div class="about-logo-wrap">
+              <img src="logo1.png" alt="BBextrim" class="about-logo">
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <span class="eyebrow">SOBRE BBEXTRIM</span>
+            <h2>Innovación práctica para todos los días.</h2>
+            <p>
+              BBextrim nace con una idea sencilla: acercarte productos novedosos y funcionales
+              que realmente aporten valor a tu vida. Nuestro enfoque combina descubrimiento,
+              practicidad y una experiencia de compra simple.
+            </p>
+            <div class="row g-3 mt-2">
+              <div class="col-sm-6"><div class="mini-feature"><i class="bi bi-check-circle-fill"></i><span>Catálogo seleccionado</span></div></div>
+              <div class="col-sm-6"><div class="mini-feature"><i class="bi bi-check-circle-fill"></i><span>Experiencia sencilla</span></div></div>
+              <div class="col-sm-6"><div class="mini-feature"><i class="bi bi-check-circle-fill"></i><span>Atención personalizada</span></div></div>
+              <div class="col-sm-6"><div class="mini-feature"><i class="bi bi-check-circle-fill"></i><span>Productos con propósito</span></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter-section">
+      <div class="container">
+        <div class="newsletter-box">
+          <div>
+            <span class="eyebrow">ÚNETE A BBEXTRIM</span>
+            <h3>Recibe novedades y ofertas</h3>
+            <p>Suscríbete para conocer primero nuestros nuevos productos.</p>
+          </div>
+          <form id="newsletterForm" class="newsletter-form">
+            <input type="email" class="form-control form-control-lg" placeholder="Tu correo electrónico" required>
+            <button class="btn btn-primary-custom btn-lg" type="submit">Suscribirme</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contacto" class="section-padding bg-light">
+      <div class="container">
+        <div class="section-heading text-center">
+          <span class="eyebrow">CONTACTO</span>
+          <h2>¿Necesitas ayuda?</h2>
+          <p>Estamos listos para ayudarte a encontrar el producto ideal.</p>
+        </div>
+        <div class="row g-4 justify-content-center">
+          <div class="col-md-4"><div class="contact-card"><i class="bi bi-whatsapp"></i><h5>WhatsApp</h5><p>Atención rápida y directa.</p><a href="#" class="stretched-link">Escríbenos</a></div></div>
+          <div class="col-md-4"><div class="contact-card"><i class="bi bi-envelope"></i><h5>Correo</h5><p>Consultas y pedidos.</p><a href="mailto:ventas@bbextrim.com" class="stretched-link">ventas@bbextrim.com</a></div></div>
+          <div class="col-md-4"><div class="contact-card"><i class="bi bi-instagram"></i><h5>Redes sociales</h5><p>Conoce nuestras novedades.</p><a href="#" class="stretched-link">Síguenos</a></div></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-5">
+          <img src="logo1.png" alt="BBextrim" class="footer-logo">
+          <p class="footer-tagline">Innovative products that makes your life better, just with one click.</p>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h6>Comprar</h6>
+          <a href="#productos">Productos</a>
+          <a href="#categorias">Categorías</a>
+          <a href="#productos">Novedades</a>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h6>BBextrim</h6>
+          <a href="#nosotros">Nosotros</a>
+          <a href="#contacto">Contacto</a>
+          <a href="#">Preguntas frecuentes</a>
+        </div>
+        <div class="col-lg-3">
+          <h6>Información</h6>
+          <p class="small">© <span id="year"></span> BBextrim. Todos los derechos reservados.</p>
+          <p class="small">Sitio web demostrativo. Configura medios de pago, envíos y datos comerciales antes de publicar.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Product detail modal -->
+  <div class="modal fade" id="productModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body p-0" id="productModalBody"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cart offcanvas -->
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="cartCanvas" aria-labelledby="cartTitle">
+    <div class="offcanvas-header border-bottom">
+      <h5 class="offcanvas-title" id="cartTitle"><i class="bi bi-bag me-2"></i>Tu carrito</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Cerrar"></button>
+    </div>
+    <div class="offcanvas-body d-flex flex-column">
+      <div id="cartItems" class="flex-grow-1"></div>
+      <div id="cartSummary" class="cart-summary d-none">
+        <div class="d-flex justify-content-between mb-2"><span>Subtotal</span><strong id="cartSubtotal">$0.00</strong></div>
+        <div class="d-flex justify-content-between mb-3 text-muted small"><span>Envío</span><span>Se calcula al finalizar</span></div>
+        <button id="checkoutBtn" class="btn btn-primary-custom btn-lg w-100">Continuar con el pedido</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div id="liveToast" class="toast" role="alert">
+      <div class="toast-body"></div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
